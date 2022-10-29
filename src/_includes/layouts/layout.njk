@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>
+            Capstone Project {% if title %}| {{ title }}{% endif %}
+        </title>
+        <meta name="description" content="{% if description %}{{ description }}
+            {% else %}DG Capstone Project{% endif %}" />
+
+        <link rel="stylesheet" href="{{ '/assets/styles/main.min.css' | url }}">
+        
+        <link rel="icon" type="image/ico" sizes="32x32" href="/assets/meta/favicon.ico">
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/meta/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/meta/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/meta/favicon-16x16.png" />
+        <link rel="manifest" href="/assets/meta/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="theme-color" content="#ffffff" />
+        
+    </head>
+    <body>
+        <div class="main-content">
+            <nav>
+                <a href="/" class="nav-brand" title="Capstone Project"><img src="/assets/images/logo-gradient-dark.svg" alt="Capstone Prokect logo"></a>
+                <ul class="fa-ul inline-navigation">
+                    <li>
+                        <a href="/steps" class="nav-item {% if page.url.includes('steps') %}nav-item-active{% endif %}"
+                            >Steps</a
+                        >
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fa-solid fa-circle"></i></span>
+                        <a href="/templates" class="nav-item {% if page.url.includes('templates') %}nav-item-active{% endif %}"
+                            >Templates</a
+                        >
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fa-solid fa-circle"></i></span>
+                        <a href="/testtype" class="nav-item {% if page.url.includes('testtype') %}nav-item-active{% endif %}"
+                            >Test Type</a
+                        >
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fa-solid fa-circle"></i></span>
+                        <a href="/bookshelf" class="nav-item {% if page.url.includes('bookshelf') %}nav-item-active{% endif %}"
+                            >Bookshelf</a
+                        >
+                    </li>
+                </ul>
+               
+            </nav>
+            {% block content %} {{ content }} {% endblock %}
+            <footer>
+                <span>&copy; 2022 </span><span class="fa-solid fa-circle"></span> <span class="name">Capstone Project</span>
+            </footer>
+        </div>
+    </body>
+</html>
