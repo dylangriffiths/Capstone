@@ -9,7 +9,7 @@
         <meta name="description" content="{% if description %}{{ description }}
             {% else %}DG Capstone Project{% endif %}" />
 
-        <link rel="stylesheet" href="{{ '/assets/styles/main.min.css' | url }}">
+        <link rel="stylesheet" href="/assets/styles/styles.css">
         
         <meta name="msapplication-TileColor" content="#ffffff" />
         <meta name="theme-color" content="#ffffff" />
@@ -18,34 +18,34 @@
     <body>
         <div class="main-content">
             <nav>
-                <a href="/" class="nav-brand" title="Future College Success"><img src="/assets/images/home_icon.png" alt="Future College Success"></a>
-                <ul class="fa-ul inline-navigation">
-                    <li>
+               
+                <ul class="ul-nav">
+                    <li class="li-nav">
+                        <a href="/" class="nav-item {% if page.url.includes('home') %}nav-item-active{% endif %}"
+                            >Home</a>
+                    </li>
+                    <li class="li-nav">
                         <a href="/steps" class="nav-item {% if page.url.includes('steps') %}nav-item-active{% endif %}"
-                            >Steps</a
-                        >
+                            >Steps</a>
                     </li>
-                    <li>
+                    <li class="li-nav">
                         <a href="/templates" class="nav-item {% if page.url.includes('templates') %}nav-item-active{% endif %}"
-                            >Templates</a
-                        >
+                            >Templates</a>
                     </li>
-                    <li>
+                    <li class="li-nav">
                         <a href="/whichtest" class="nav-item {% if page.url.includes('whichtest') %}nav-item-active{% endif %}"
-                            >Which Test</a
-                        >
+                            >Which Test</a>
                     </li>
-                    <li>
+                    <li class="li-nav">
                         <a href="/additional" class="nav-item {% if page.url.includes('additional') %}nav-item-active{% endif %}"
-                            >Additional</a
-                        >
+                            >Additional</a>
                     </li>
                 </ul>
                
             </nav>
             {% block content %} {{ content }} {% endblock %}
             <footer>
-                <span></span><span class="fa-solid fa-circle"></span> <span class="name">Future College Success - Capstone Project</span>
+                <span></span><span class="foot"></span> <span class="name">Future College Success - Capstone Project</span>
             </footer>
         </div>
     </body>
