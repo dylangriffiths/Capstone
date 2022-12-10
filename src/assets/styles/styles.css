@@ -7,7 +7,7 @@ p {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #3D3D3D;
 }
 
 .li-nav {
@@ -40,10 +40,20 @@ footer {
     padding: 0px;
     font-family: Geneva;
     font-size: 15px;
-    background-color: #333;
+    background-color: #3D3D3D;
     position: absolute;
     bottom: 0;
     margin: 0;
     width: 100%;
     height: 25px;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+.row:after {
+    display: table;
+    clear: both;
 }
