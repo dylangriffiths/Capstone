@@ -70,6 +70,7 @@ h2 {
 
 li {
     font-size: 18px;
+    padding: 2px;
 }
 
 hr.solid {
@@ -78,4 +79,10 @@ hr.solid {
 
 a {
     color: #135018ff;
+}
+
+.campuses {
+    display: flex;
+    justify-content: center;
+    padding: 2px;
 }
