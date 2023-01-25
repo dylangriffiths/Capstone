@@ -1,6 +1,7 @@
 p {
     color: black;
     font-size: 20px;
+    font-family: Georgia;
 }
 
 .ul-nav {
@@ -9,6 +10,7 @@ p {
     padding: 0;
     overflow: hidden;
     background-color: #3D3D3D;
+    font-family: Georgia;
 }
 
 .li-nav {
@@ -19,7 +21,7 @@ p {
    display: block;
    color: white;
    text-align: center;
-   padding: 15px;
+   padding: 14px;
    font-size: 20px;
    text-decoration: none;
 }
@@ -28,12 +30,13 @@ p {
     background-color: #135018ff;
 }
 body {
-    max-width: 99%;
+    max-width: 100%;
     margin: 0 auto;
 }
 main {
     margin: 0 auto;
     padding: 15px;
+    max-width: 95%;
 }
 
 footer {
@@ -64,13 +67,14 @@ h2 {
     text-decoration-color:#135018ff;
 }
 
-.page-title {
+.page-title, .display-title {
     color: #135018ff;
 }
 
 li {
     font-size: 18px;
     padding: 2px;
+    font-family: Georgia;
 }
 
 hr.solid {
