@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>
+            Capstone Project {% if title %}| {{ title }}{% endif %}
+        </title>
+        <meta name="description" content="{% if description %}{{ description }}
+            {% else %}DG Capstone Project{% endif %}" />
+
+        <link rel="stylesheet" href="/assets/styles/styles.css">
+        
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="theme-color" content="#ffffff" />
+        
+    </head>
+    <body>
+        <div class="main-content">
+            <nav>
+               
+                <ul class="ul-nav">
+                    <li class="li-nav">
+                        <a href="/" class="nav-item {% if page.url.includes('home') %}nav-item-active{% endif %}"
+                            >Home</a>
+                    </li>
+                    <li class="li-nav">
+                        <a href="/steps" class="nav-item {% if page.url.includes('steps') %}nav-item-active{% endif %}"
+                            >Steps</a>
+                    </li>
+                    <li class="li-nav">
+                        <a href="/templates" class="nav-item {% if page.url.includes('templates') %}nav-item-active{% endif %}"
+                            >Templates</a>
+                    </li>
+                    <li class="li-nav">
+                        <a href="/whichtest" class="nav-item {% if page.url.includes('whichtest') %}nav-item-active{% endif %}"
+                            >Which Test</a>
+                    </li>
+                    <li class="li-nav">
+                        <a href="/financialaid" class="nav-item {% if page.url.includes('financialaid') %}nav-item-active{% endif %}"
+                            >Financial Aid</a>
+                    </li>
+                </ul>
+               
+            </nav>
+            {% block content %} {{ content }} {% endblock %}
+           <!--<footer>
+                <span></span><span class="foot"></span> <span class="name">Future College Success - Capstone Project</span>
+            </footer>-->
+        </div>
+    </body>
+</html>

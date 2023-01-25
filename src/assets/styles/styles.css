@@ -1,0 +1,92 @@
+p {
+    color: black;
+    font-size: 20px;
+    font-family: Georgia;
+}
+
+.ul-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #3D3D3D;
+    font-family: Georgia;
+}
+
+.li-nav {
+   float: left;
+}
+
+.nav-item {
+   display: block;
+   color: white;
+   text-align: center;
+   padding: 14px;
+   font-size: 20px;
+   text-decoration: none;
+}
+
+.nav-item:hover{
+    background-color: #135018ff;
+}
+body {
+    max-width: 100%;
+    margin: 0 auto;
+}
+main {
+    margin: 0 auto;
+    padding: 15px;
+    max-width: 95%;
+}
+
+footer {
+    color: white;
+    padding: 0px;
+    font-family: Geneva;
+    font-size: 15px;
+    background-color: #135018ff;
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    width: 100%;
+    height: 25px;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+.row:after {
+    display: table;
+    clear: both;
+}
+
+h2 {
+    text-decoration: underline;
+    text-decoration-color:#135018ff;
+}
+
+.page-title, .display-title {
+    color: #135018ff;
+}
+
+li {
+    font-size: 18px;
+    padding: 2px;
+    font-family: Georgia;
+}
+
+hr.solid {
+    border-top: 3px solid #135018ff;
+}
+
+a {
+    color: #135018ff;
+}
+
+.campuses {
+    display: flex;
+    justify-content: center;
+    padding: 2px;
+}
