@@ -35,7 +35,8 @@ body {
 }
 main {
     margin: 0 auto;
-    padding: 15px;
+    padding-right: 15px;
+    padding-bottom: 5px;
     max-width: 1400px;
 }
 
@@ -71,6 +72,7 @@ h2 {
     color: #135018ff;
     font-family: 'Oleo Script', cursive;
     font-size: 35px;
+    padding-bottom: 0px;
 }
 
 li {
