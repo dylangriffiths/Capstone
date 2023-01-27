@@ -1,6 +1,6 @@
 p {
     color: black;
-    font-size: 20px;
+    font-size: 18px;
     font-family: Georgia;
 }
 
@@ -22,7 +22,7 @@ p {
    color: white;
    text-align: center;
    padding: 14px;
-   font-size: 20px;
+   font-size: 24px;
    text-decoration: none;
 }
 
@@ -36,14 +36,14 @@ body {
 main {
     margin: 0 auto;
     padding: 15px;
-    max-width: 95%;
+    max-width: 1400px;
 }
 
 footer {
     color: white;
     padding: 0px;
     font-family: Geneva;
-    font-size: 15px;
+    font-size: 20px;
     background-color: #135018ff;
     position: absolute;
     bottom: 0;
@@ -69,6 +69,8 @@ h2 {
 
 .page-title, .display-title {
     color: #135018ff;
+    font-family: 'Oleo Script', cursive;
+    font-size: 35px;
 }
 
 li {
@@ -89,4 +91,32 @@ a {
     display: flex;
     justify-content: center;
     padding: 2px;
+}
+
+.img {
+    padding: 0px;
+    height: 300px;
+    width: 400px;
+}
+
+.poster {
+    height: 500px;
+    width: 300px;
+    padding: 10px;
+}
+
+.fin {
+    height: 350px;
+    width: 470px;
+    padding: 8px;
+    align-content: center;
+}
+
+.ad {
+    font-size: 25px;
+    padding-top: 50px;
+    padding-bottom: 160px;
+    padding-left: 40px;
+    padding-right: 15px;
+    font-weight: bold;
 }
